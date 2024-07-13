@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "remixicon": "^4.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "name": "weatherwatcher",
+  "description": "WeatherWatcher is a project developed to enhance my skills in asynchronous JavaScript. This application fetches real-time weather data from the OpenWeatherMap API and displays it in a user-friendly interface. It allows users to search for weather information by city, providing details such as temperature and weather conditions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w assets/sass/main.scss assets/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
