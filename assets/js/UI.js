@@ -1,6 +1,7 @@
 class UI{
     constructor() {
         this.profile_pic=document.getElementById("profile-pic")
+        this.background=document.getElementById("background")
         this.min_temp=document.getElementById("min-temp")
         this.max_temp=document.getElementById("max-temp")
         this.pressure=document.getElementById("pressure")
@@ -29,5 +30,8 @@ class UI{
 
     DisplayProfPhoto(photo){
         this.profile_pic.style.backgroundImage =`url(${photo.urls.regular})`
+    }
+    DisplayBG(bg){
+        this.background.style.backgroundImage =`url(${bg.hits[0].webformatURL})`
     }
 }
