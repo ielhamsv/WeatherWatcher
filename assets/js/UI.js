@@ -1,5 +1,6 @@
 class UI{
     constructor() {
+        this.profile_pic=document.getElementById("profile-pic")
         this.min_temp=document.getElementById("min-temp")
         this.max_temp=document.getElementById("max-temp")
         this.pressure=document.getElementById("pressure")
@@ -24,5 +25,9 @@ class UI{
     }
     kelvinToCelsius(kelvin) {
         return (kelvin - 273.15).toFixed(1);
+    }
+
+    DisplayProfPhoto(photo){
+        this.profile_pic.style.backgroundImage =`url(${photo.urls.regular})`
     }
 }

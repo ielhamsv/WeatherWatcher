@@ -18,7 +18,8 @@ body {
 }
 
 #profile-pic {
-  background-color: red;
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
   width: 200px;
   height: 200px;
