@@ -11,8 +11,8 @@ class UI{
         this.location=document.getElementById("location")
     }
 
-    DisplayWeather(weather,location){
-        this.location= location
+    DisplayWeather(weather,loc){
+        this.location.textContent= loc
         this.min_temp.textContent=`${this.kelvinToCelsius(weather.main.temp_min)}°`
         this.max_temp.textContent=`${this.kelvinToCelsius(weather.main.temp_max)}°`
         this.pressure.textContent=weather.main.pressure

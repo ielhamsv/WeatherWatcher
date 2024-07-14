@@ -50,7 +50,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Forecast</h4>
-                        <div id="temp" class="pt-4">18</div>
+                        <div id="temp" class="pt-4"></div>
                             <div>
                                 <span id="status" class="fw-bold"></span>
                                 <img id="icon" src="" alt="">
@@ -62,11 +62,11 @@
                                 <div class="mx-auto" id="profile-pic"></div>
                             </div>
                             <div class="col-12 text-center">
-                                    <div id="location" class="my-3"></div>
+                                <div id="location" class="my-3"></div>
                             </div>
                             <div class="col-12 text-center">
                                 <i class="ri-map-pin-2-fill"></i>
-                                <a href="">Change Location </a>
+                                <a data-toggle="modal" data-target="#locationModal" href="">Change Location </a>
                             </div>
                         </div>
                     </div>
@@ -76,6 +76,51 @@
     </div>
 </section>
 
+
+<div class="modal fade" id="locationModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> Select Location </h5>
+            </div>
+            <div class="modal-body">
+                <form id="w-form">
+                    <label for="location-input">Choose or type a city:</label>
+                    <input list="cities" id="location-input" name="city-input">
+                    <datalist id="cities">
+                        <option value="Tehran">
+                        <option value="Mashhad">
+                        <option value="Isfahan">
+                        <option value="Karaj">
+                        <option value="Shiraz">
+                        <option value="Tabriz">
+                        <option value="Qom">
+                        <option value="Ahvaz">
+                        <option value="Kermanshah">
+                        <option value="Urmia">
+                    </datalist>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button class="btn btn-dark" id="change-location"> select </button>
+                <button class="btn btn-light" data-dismiss="modal"> close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 <script src="assets/js/UI.js"></script>
 <script src="assets/js/weather.js"></script>
 <script src="assets/js/main.js"></script>

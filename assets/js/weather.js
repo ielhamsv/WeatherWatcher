@@ -4,7 +4,7 @@
  * weather information for a specified location.
  */
 class Weather{
-    constructor(location="Tehran") {
+    constructor(location="tehran") {
         this.location= location,
         this.apikey="905460c42ca8d9cb199e258e9d2f90db"
     }
