@@ -18,4 +18,8 @@ class Weather{
             throw Error(response.status)
         }
     }
+
+    SetLocation(location){
+        this.location= location
+    }
 }
